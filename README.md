@@ -30,6 +30,7 @@ Investigue y explique, dando ejemplos cómo se utilizan los siguientes elementos
 > - Sentencias condicionales.
 > - Sentencias cíclicas.
 > - Subprogramas
+
 De ejemplos de cada una.
 
 ### Condiciones de entrega
