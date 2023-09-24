@@ -1,0 +1,21 @@
+#!/bin/bash
+# a)
+sed 's/\./\.\n/g' breve_historia.txt
+# b)
+sed '/^.$/d' breve_historia.txt
+# c)
+sed 's/\./\.\n/g' breve_historia.txt | sed '/^.$/d' > breve_historia_2.txt
+# d)
+egrep -i 'independencia' breve_historia.txt
+# e)
+egrep -o $'\n''.?El .*\.'$'\n' breve_historia.txt
+# f)
+egrep -c 'peronismo' breve_historia.txt
+# g)
+egrep -c 'Sarmiento' breve_historia.txt && egrep -c 'Rosas' breve_historia.txt
+# h)
+egrep '([18]{2}[0-9][1-9])|(1900)' breve_historia.txt
+# i)
+sed "s/^[[:alpha:]]*\b//g" breve_historia.txt
+# j)
+ls | grep '\.txt$'
